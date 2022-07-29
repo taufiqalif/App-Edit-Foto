@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Edit Foto</title>
+</head>
+
+<body>
+  <div class="container disable">
+    <h2>Editor Foto</h2>
+    <div class="wrapper">
+      <div class="editor-panel">
+        <div class="filter">
+          <label class="title">Filter</label>
+          <div class="options">
+            <button id="brightness" class="active">Kecerahan</button>
+            <button id="saturation">Kejenuhan</button>
+            <button id="inversion">Inversi</button>
+            <button id="grayscale">Skala Abu-abu</button>
+          </div>
+          <div class="slider">
+            <div class="filter-info">
+              <p class="name">Kecerahan</p>
+              <p class="value">100%</p>
+            </div>
+            <input type="range" value="100" min="0" max="200">
+          </div>
+        </div>
+        <div class="rotate">
+          <label class="title">Putar & Balik</label>
+          <div class="options">
+            <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+            <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+            <button id="horizontal"><i class='bx bx-reflect-vertical'></i></button>
+            <button id="vertical"><i class='bx bx-reflect-horizontal'></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="preview-img">
+        <img src="img/logo.png" alt="Logo-img">
+      </div>
+    </div>
+    <div class="controls">
+      <button class="reset-filter">Reset</button>
+      <div class="row">
+        <input type="file" class="file-input" accept="image/*" hidden>
+        <button class="choose-img">Pilih Gambar</button>
+        <button class="save-img">Simpan Gambar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
